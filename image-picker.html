@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	
+        <title>IMAGE PICKER</title>
+    </head>
+
+    <script type="text/javascript">	
+        function gantigambar()
+         {		
+             let gambar = document.getElementById("listgambar").value;		
+             document.getElementById("gambar").src = gambar;		
+             alert("Ini Gambar " + gambar);	  
+           }
+       </script>
+
+    <center><h1>AMIME PICTURE</h1></center>
+        <body style="margin: 0px" bgcolor="cyan"> <center>		
+            <select onchange="gantigambar();" id="listgambar">			
+                <option value="https://images5.alphacoders.com/530/530476.jpg">PILIH KARAKTER</option>			
+                <option value="https://images3.alphacoders.com/144/144565.jpg">ITACHI</option>			
+                <option value="https://images6.alphacoders.com/385/385172.jpg">HINATA</option>			
+                <option value="https://images4.alphacoders.com/606/606242.jpg">OBITO</option>			
+                <option value="https://images4.alphacoders.com/606/606237.png">MINATO</option>	
+                <option value="https://images5.alphacoders.com/321/321513.jpg">NARUTO</option>
+                <option value="https://images3.alphacoders.com/135/135635.jpg">SASUKE</option>		
+            </select></center>		
+            <br/>	
+            <img src="https://images5.alphacoders.com/530/530476.jpg" style="width: 100%" id="gambar">
+         </body>
+</html>
